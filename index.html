@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NS-Tech</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/f385ce9a2f.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -202,7 +203,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary text-center my-5">See more Courses</button>
+                <button type="button" class="btn btn-info text-center text-white my-5">See more Courses</button>
             </div>
 
         </section>
@@ -211,7 +212,7 @@
              Course end
         ---------------------->
         <!---------------------
-             Ready start
+             Ready join start
          ------------------->
         <div class="container d-flex bg-info py-5 rounded">
             <div class="row">
@@ -223,13 +224,99 @@
                         looking at its layout.</p>
                 </div>
                 <div class="col-lg-6 m-auto text-center">
-                    <button type="button" class="btn btn-light text-info text-center my-5">Register Now</button>
+                    <button type="button" class="btn btn-light text-info text-center my-5" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Register Now</button>
                 </div>
             </div>
         </div>
         <!-------------------
-        Ready end 
+            Ready Join end 
         -------------------->
+        <!--------------- 
+            Modal 
+         ---------------->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- form       -->
+                        <form>
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form3Example1" class="form-control" />
+                                        <label class="form-label" for="form3Example1">First name</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form3Example2" class="form-control" />
+                                        <label class="form-label" for="form3Example2">Last name</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form3Example3" class="form-control" />
+                                <label class="form-label" for="form3Example3">Email address</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="form3Example4" class="form-control" />
+                                <label class="form-label" for="form3Example4">Password</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
+                                    checked />
+                                <label class="form-check-label" for="form2Example33">
+                                    Subscribe to our newsletter
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-info btn-block mb-4">Sign up</button>
+                            </div>
+
+
+                            <!-- Register buttons -->
+                            <div class="text-center">
+                                <p>or sign up with:</p>
+                                <button type="button" class="btn btn-info btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-info btn-floating mx-1">
+                                    <i class="fa-brands fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-info btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-info btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <!-- form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------
+                modal
+        -------------- -->
         <!-------------------------------
              Frequently asked question start 
             ----------------------------->
@@ -324,7 +411,64 @@
 
         <!-----------------------
              Frequently asked question end 
-            ------------- -->
+            ----------------->
+        <!-- Footer -->
+        <footer class="bg-info text-center mt-5">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <div class="text-center fw-bold m-5">
+                    <h1>
+                        NS-tech
+                    </h1>
+                </div>
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
+                        role="button"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
+                        role="button"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                        role="button"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+                        role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
+                        role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
+                        role="button"><i class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+
+
+
+
+                <section class="mb-4">
+                    <p>
+                        Office 41, Zawaya Buildin, Ghala Muscat,
+                        Sultanate of Oman
+                    </p>
+                </section>
+
+
+
+            </div>
+
+
+        </footer>
+        <!--------------
+             footer
+        ------------- -->
+
 
     </div>
 
